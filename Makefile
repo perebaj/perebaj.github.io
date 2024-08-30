@@ -7,6 +7,15 @@ generate:
 server: generate
 	hexo server
 
+## create a new blog post
+.PHONY: new-post
+new-post:
+	if [ -z "$(title)" ]; then \
+		echo "Usage: make new-post title='Your Title'"; \
+		exit 1; \
+	fi
+	hexo new post "$(title)"
+
 ## Display help for all targets
 .PHONY: help
 help:
