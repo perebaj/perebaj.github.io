@@ -1,6 +1,6 @@
 ---
 title: just make it
-date: 2024-08-30 09:47:01
+date: 2023-10-18 09:47:01
 tags:
 ---
 
