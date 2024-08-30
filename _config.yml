@@ -39,7 +39,7 @@ theme_config:
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: 
+url:
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -121,5 +121,5 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
+# Themes: https://hexo.io/themes/
 theme: cactus
