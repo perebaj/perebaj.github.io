@@ -1,3 +1,13 @@
+## install dependencies
+.PHONY: install
+install:
+	npm install
+
+## download the theme that this blog uses
+.PHONY: download-theme
+download-theme:
+	git clone https://github.com/probberechts/hexo-theme-cactus.git themes/cactus
+
 .PHONY: generate
 generate:
 	hexo generate

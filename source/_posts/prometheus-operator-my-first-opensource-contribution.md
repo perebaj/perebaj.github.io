@@ -4,7 +4,7 @@ date: 2024-08-30 08:05:01
 tags:
 ---
 
-<img src="/images/prometheuspost/gopher.jpeg" alt="async" style="width:200px;"/>
+<img src="/images/gopher.jpeg" alt="async" style="width:200px;"/>
 
 # Open Source
 
@@ -14,11 +14,11 @@ I added a new feature to the [prometheus-operator project](https://prometheus-op
 
 Basically I changed an old logger library to a new one [slog](https://pkg.go.dev/golang.org/x/exp/slog). This takes 20 PRs and 1 month of work. And here are some learnings and findings.
 
-<img src="/images/prometheuspost/prometheusPRs.png" alt="prs" style="width:400px;"/>
+<img src="/images/prometheusPRs.png" alt="prs" style="width:400px;"/>
 
 This project is HUGE, almost 400k lines of code. Of Go, it's more than 95k lines of code. What makes the difference? Documentation, tests, and good practices. This enables everyone to contribute and understand the codebase.
 
-<img src="/images/prometheuspost/linesofcode.png" alt="prs" style="width:500px;"/>
+<img src="/images/linesofcode.png" alt="prs" style="width:500px;"/>
 
 # Some learnings:
 
@@ -58,7 +58,7 @@ param-%:
 
 Then, when you type `make help` you will see all the commands that you can use in the project.
 
-<img src="/images/prometheuspost/helpcommand.png" alt="prs" style="width:400px;"/>
+<img src="/images/helpcommand.png" alt="prs" style="width:400px;"/>
 
 
 Other things like tooling. You don't want to overwrite your local tools, like golangci-lint, mockgen, etc. So, you can use the Makefile to download and install these tools in a specific directory, like `./tmp/bin`.
