@@ -10,6 +10,32 @@ keywords:
 author: Jojo
 language: en
 timezone: 'America/Sao_Paulo'
+theme_config:
+  projects_url: https://github.com/perebaj
+  nav:
+    home: /
+    about: /about/
+    articles: /archives/
+    projects: https://github.com/perebaj
+
+  social_links:
+    -
+      icon: github
+      link: http://github.com/perebaj
+    -
+      icon: twitter
+      link: https://twitter.com/jj_neno
+    - icon: linkedin
+      link: https://www.linkedin.com/in/jjneno/
+    - icon: mail
+      link: perebaj@gmail.com
+
+
+  copyright:
+    start_year: 2024
+    end_year:
+
+  colorscheme: dark
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -97,8 +123,3 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: cactus
-
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: ''
