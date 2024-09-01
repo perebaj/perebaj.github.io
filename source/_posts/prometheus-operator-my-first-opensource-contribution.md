@@ -6,7 +6,45 @@ tags:
 
 <img src="/images/gopher.jpeg" alt="async" style="width:200px;"/>
 
-# Open Source
+# What is the prometheus-operator?
+
+Before jump into the contribution, let's understand what is the prometheus-operator.
+
+A typical monitoring system is composed of multiple components, like Prometheus, Grafana, and Alert manager. Manage and deploy these components manually is a hard task, and the Prometheus Operator helps you to manage and deploy these components in a Kubernetes cluster. It's creates an abstraction layer, where all resources related to storage, secrets, services and deployments are created automatically.
+
+In summary, it aims to:
+
+- Simplify and automate the configuration of Prometheus monitoring stack.
+
+## Operator = CRD + Custom Controllers
+
+### Controller
+
+In robotics and automation, a control loop is a non-terminating loop that regulates the state of a system, Like a thermostat that regulates the temperature of a room or a PID controller that regulates the speed of a motor.
+
+In Kubernetes, controllers are control loops that watch the state of your cluster, then make or request changes where needed. Each controller tries to move the current cluster state closer to the desired state.
+
+- [Official Documentation](https://kubernetes.io/docs/concepts/architecture/controller/)
+
+### Custom Resource Definition (CRD) and Resources
+
+Before dig into a Custom resource, let's understand what is a resource in Kubernetes.
+
+When you have you first contact with Kubernetes, you will see a lot of "tools", like Pods, Deployments, Services, etc. These are resources that K8s manages.
+
+A Custom Resource is an extension of the Kubernetes API that is not necessarily available in a default Kubernetes installation. It represents a **customization of a particular Kubernetes installation.**
+
+For example, you can create a Custom Resource that controls a database, and create some interfaces to manage it, like create, delete, update, etc.
+
+### Operator
+
+<img src="/images/k8s-operator.png" alt="async" style="width:400px;"/>
+
+People who run workloads on Kubernetes need to use automation to take care of repeatable tasks. The operator pattern captures how you can write code to automate a task beyond what Kubernetes itself provides.
+
+In the end, it makes use of the Custom Resource Definition and the Custom Controller to manage the resources in the Kubernetes cluster.
+
+# Contribution and Learnings
 
 Recently I pushed my first big feature in production in the open source world, or not so big...
 
@@ -19,8 +57,6 @@ Basically I changed an old logger library to a new one [slog](https://pkg.go.dev
 This project is HUGE, almost 400k lines of code. Of Go, it's more than 95k lines of code. What makes the difference? Documentation, tests, and good practices. This enables everyone to contribute and understand the codebase.
 
 <img src="/images/linesofcode.png" alt="prs" style="width:500px;"/>
-
-# Some learnings:
 
 ## Makefile
 
@@ -102,3 +138,13 @@ What I learned with that, is all things can be located in the GitHub repository.
 ## Async
 
 I don't claim for any online meeting in this entire process. They just have biweekly meetings to discuss the future of the project. All the other problems, are solved asynchronously using Git or creating a thread in Slack.
+
+## Structured Logs
+
+Here is an example of how to use the slog Library.
+
+[#6743](https://github.com/prometheus-operator/prometheus-operator/pull/6743)
+
+# Important Resorces
+
+- [A deep dive to Prometheus Operator - Jayapriya Pai](https://www.youtube.com/watch?v=Uph_Say4D3M)
