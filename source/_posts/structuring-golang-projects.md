@@ -38,9 +38,6 @@ The entities that this file system will deal with are:
 - Lamps
 - Processes
 
-<<<<<<< Updated upstream
-### Flat
-=======
 And these operations will serve an HTTP API.
 
 Above the structure of each approach and a brief explanation of each one.
@@ -48,23 +45,28 @@ Above the structure of each approach and a brief explanation of each one.
 ### Flat
 
 ```txt
-├── flat
-│   ├── disk.go
-│   ├── inmem.go
-│   ├── lamps.go
-│   ├── main.go
-│   └── processes.go
+.
+├── cmd
+│   └── main.go
+└── flat
+    ├── disk.go
+    ├── http.go
+    ├── inmem.go
+    ├── lamps.go
+    ├── output.txt
+    └── processes.go
+
 ```
 
->>>>>>> Stashed changes
+At least for me, in a first glance, seems a good approach. Everything is together, easy to find, easy to change. But, obviously, when the projects grow, this approach will become a mess.
+
+It's visual easy that this design will produce circular dependencies.
+
+
 ### By Function/Layer
 ### By Context
 
 ## Package organization
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 ### Domain Types
 ### Service Types
 
