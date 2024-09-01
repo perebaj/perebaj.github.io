@@ -38,11 +38,33 @@ The entities that this file system will deal with are:
 - Lamps
 - Processes
 
+<<<<<<< Updated upstream
 ### Flat
+=======
+And these operations will serve an HTTP API.
+
+Above the structure of each approach and a brief explanation of each one.
+
+### Flat
+
+```txt
+├── flat
+│   ├── disk.go
+│   ├── inmem.go
+│   ├── lamps.go
+│   ├── main.go
+│   └── processes.go
+```
+
+>>>>>>> Stashed changes
 ### By Function/Layer
 ### By Context
 
 ## Package organization
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 ### Domain Types
 ### Service Types
 
