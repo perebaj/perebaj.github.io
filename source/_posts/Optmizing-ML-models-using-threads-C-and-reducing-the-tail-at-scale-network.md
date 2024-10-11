@@ -7,6 +7,8 @@ tags:
 
 # Optmizing ML models using threads, CPickle and reducing the tail at scale network
 
+Most of the systems should have a predictable response time, this to attend the user expectations, flows SLA and to make everything smooth. But sometimes, we have some problems to achive it. This article will show how serverless can introduce a problem in your ML pipeline and how I solved it.
+
 ## What is tail at Scale network?
 
 When you split your feature in multiple services, you need take care of a way to connect them. Usually this is made by a network call. This can be done by a File Transfer, Shared Database, Remote procedure call or even messaging. [1]
@@ -29,7 +31,7 @@ graph LR
 ```
 
 In serverless computing, each function is assigned to a separate container for the execution of functions. If the container is ready, the function is directly assigned to this container, and the function is executed. However, if there is no ready container, which is mostly the case, it is necessary to prepare a new container to execute the function. In the serverless paradigm, containers are
-released after a specific time (𝜏) after executing functions to avoid wasting resources. This process is known as the scale to zero. After the containers are scaled to zero, it is necessary to start the container again for the requests coming to the server. Starting a new container and preparing the
+released after a specific time (𝜏) after executing functions to avoid wasting resources. This process is known as the **scale to zero**. After the containers are scaled to zero, it is necessary to start the container again for the requests coming to the server. Starting a new container and preparing the
 function for execution causes a **specific latency** [3].
 
 # References
