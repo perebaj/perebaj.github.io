@@ -1,12 +1,12 @@
 ---
-title: Optmizing ML models using threads, CPickle and reducing the tail at scale network
+title: Optmizing ML models using threads and reducing the tail at scale network
 date: 2024-10-10 18:57:20
 tags:
 ---
 
-# Optmizing ML models using threads, CPickle and reducing the tail at scale network
+# Optmizing ML models using threads and reducing the tail at scale network
 
-Most of the systems should have a predictable response time, this to attend the user expectations, flows SLA and to make everything smooth. But sometimes, we have some problems to achive it. This article will show how serverless can introduce a problem in your ML pipeline and how I solved it.
+Most of the systems should have a predictable response time, this to attend the user expectations, follow a SLA and to make everything smooth. But sometimes, we have some problems to achive it. This article will show how serverless can introduce a problem in your ML pipeline and how I solved it.
 
 ## What is tail at Scale network?
 
@@ -41,9 +41,11 @@ I was developing a ML pipeline responsible for classifying a user action. This p
 graph LR
     A[A-User Action] --> B[B-Consume internal data to feed the pipeline]
     B --> C1[Model 1]
-    C1 --> C2[Model 2]
-    C2 --> C3[Model 3]
-    C3 --> C4[Model 4]
+    subgraph C
+        C1 --> C2[Model 2]
+        C2 --> C3[Model 3]
+        C3 --> C4[Model 4]
+    end
     C4 --> D[D-Evaluate the model results and return a classification]
 ```
 
@@ -59,11 +61,10 @@ This table represents the 50th, 90th, and 95th percentiles for the processing la
 | LOGISTIC_TYPE_II_NO_SAMPLE     | 5088.5                   | 7982.1          | 8390.85         |
 | LOGISTIC_TYPE_II_WITH_SAMPLE   | 6477.5                   | 8506.8          | 9055.4          |
 
-This table represents the 50th, 90th, and 95th percentiles for the processing latencies of each model.
 
-- The mean of the **total model processing** was 21.6s
-- The 90th percentile of the **total model processing** was 30.90s
-- The 95th percentile of the **total model processing** was 32.0s
+- The sum of the mean of the **total model processing** was 21.6s
+- The sum 90th percentile of the **total model processing** was 30.90s
+- The sum 95th percentile of the **total model processing** was 32.0s
 
 Not to hard to see that just the time to run the models is more than my constraint of 5 seconds. So I needed to find a way to reduce this time.
 
@@ -75,7 +76,7 @@ But before start to create a solution, I needed to instrument the code to unders
 
 What is possible to see in the images above is that the time spent to load the pickle file was the bottleneck of the pipeline, but we just pay the biggest time in the first call of the function. The next calls are faster because the container is already loaded and the pickle file is in memory.
 
-Based on this information, I decided to load all the models using pool threads and do all of that in the same container. Using this approach, I was able to reduce the time spent to load the pickle file and make the prediction. The results are below:
+Based on this information, I decided to load all the models using **ThreadPool** and do all of that in the same container. Using this approach, I was able to reduce the time spent to load the pickle file and make the prediction. The results are below:
 
 Here is the markdown table with the provided data for `LOGISTIC_TYPE_1_MODEL`:
 
@@ -91,6 +92,7 @@ The reduction of time was aggressive.
 - The 90th percentile of the **total model processing** was 8.475s
 - The 95th percentile of the **total model processing** was 10.332s
 
+The pipeline after the change was like the figure below:
 
 ```mermaid
 graph LR
@@ -105,6 +107,34 @@ graph LR
     S --> D[D-Evaluate the results and return a classification]
     D[D-Evaluate the results and return a classification]
 ```
+
+To load all models in single shot, I used the `ThreadPoolExecutor` module from Python. The code is below:
+
+```python
+def load_all_models(self) -> dict:
+        """
+        Load all models from the file system and return a dictionary with the model name as the key and the model itself
+        """
+        # Dictionary to store all models. Using the model name as the key and the model itself as the value.
+        models = {}
+        start_time = time.perf_counter()
+        with ThreadPoolExecutor() as executor:
+            results = list(executor.map(load_pickle_model, file_names))
+            # Assign each model to a dictionary with the model name as the key and the model itself as the value
+            for file_path, model in zip(file_names, results):
+                models[file_path] = model
+        end_time = time.perf_counter()
+
+        elapsed_time = end_time - start_time
+        self.logging.info(
+            {
+                "message": f"Time to load all models: {elapsed_time:0.8f} seconds",
+            }
+        )
+        return models
+```
+
+Accordingly the [documentation](https://superfastpython.com/threadpool-python/#Step_2_Submit_Tasks_to_the_Thread_Pool) the threadpool is perfect for I/O bound tasks, and the pickle file load is a I/O bound task. Besides that, using the Executor map functions, it's possible to load all models and lock the main thread until all models are loaded, avoiding deadlocks.
 
 # References
 
