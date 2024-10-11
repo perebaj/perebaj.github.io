@@ -28,9 +28,9 @@ graph LR
     D --> E[Scale to Zero]
 ```
 
-In serverless computing, each function is assigned to a separate container for the execution of functions [8]. If the container is ready, the function is directly assigned to this container, and the function is executed. However, if there is no ready container, which is mostly the case, it is necessary to prepare a new container to execute the function. In the serverless paradigm, containers are
-released after a specific time (𝜏) after executing functions to avoid wasting resources. This process is known as the scale to zero [19]. After the containers are scaled to zero, it is necessary to start the container again for the requests coming to the server. Starting a new container and preparing the
-function for execution causes a specific latency
+In serverless computing, each function is assigned to a separate container for the execution of functions. If the container is ready, the function is directly assigned to this container, and the function is executed. However, if there is no ready container, which is mostly the case, it is necessary to prepare a new container to execute the function. In the serverless paradigm, containers are
+released after a specific time (𝜏) after executing functions to avoid wasting resources. This process is known as the scale to zero. After the containers are scaled to zero, it is necessary to start the container again for the requests coming to the server. Starting a new container and preparing the
+function for execution causes a **specific latency** [3].
 
 # References
 
