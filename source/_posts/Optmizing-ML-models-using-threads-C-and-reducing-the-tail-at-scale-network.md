@@ -6,9 +6,13 @@ tags:
 
 # Optmizing ML models using threads and reducing the tail at scale network
 
+<img src="image-3.png" alt="blow" width="200" style="display: block; margin-left: auto; margin-right: auto; transform: rotate(90deg);"/>
+
 Most of the systems should have a predictable response time, this to attend the user expectations, follow a SLA and to make everything smooth. But sometimes, we have some problems to achive it. This article will show how serverless can introduce a problem in your ML pipeline and how I solved it.
 
 ## What is tail at Scale network?
+
+<img src="image-4.png" alt="blow" width="200" style="display: block; margin-left: auto; margin-right: auto; transform: rotate(90deg);"/>
 
 When you split your feature in multiple services, you need take care of a way to connect them. Usually this is made by a network call. This can be done by a File Transfer, Shared Database, Remote procedure call or even messaging. [1]
 
