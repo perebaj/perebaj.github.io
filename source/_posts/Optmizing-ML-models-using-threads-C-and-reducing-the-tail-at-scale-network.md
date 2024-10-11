@@ -6,13 +6,13 @@ tags:
 
 # Optmizing ML models using threads and reducing the tail at scale network
 
-<img src="image-3.png" alt="blow" width="200" style="display: block; margin-left: auto; margin-right: auto; transform: rotate(90deg);"/>
+<img src="/images/image-3.png" alt="blow" width="200" style="display: block; margin-left: auto; margin-right: auto; transform: rotate(90deg);"/>
 
 Most of the systems should have a predictable response time, this to attend the user expectations, follow a SLA and to make everything smooth. But sometimes, we have some problems to achive it. This article will show how serverless can introduce a problem in your ML pipeline and how I solved it.
 
 ## What is tail at Scale network?
 
-<img src="image-4.png" alt="blow" width="200" style="display: block; margin-left: auto; margin-right: auto; transform: rotate(90deg);"/>
+<img src="/images/image-4.png" alt="blow" width="200" style="display: block; margin-left: auto; margin-right: auto; transform: rotate(90deg);"/>
 
 When you split your feature in multiple services, you need take care of a way to connect them. Usually this is made by a network call. This can be done by a File Transfer, Shared Database, Remote procedure call or even messaging. [1]
 
@@ -74,9 +74,9 @@ Not to hard to see that just the time to run the models is more than my constrai
 
 But before start to create a solution, I needed to instrument the code to understand where the time was being spent. I used the `time` module to measure the time spent in each step of the pipeline. The results are below:
 
-<img src="image.png" alt="drawing" width="400"/>
-<img src="image-1.png" alt="drawing" width="400"/>
-<img src="image-2.png" alt="drawing" width="400"/>
+<img src="/images/image.png" alt="drawing" width="400"/>
+<img src="/images/image-1.png" alt="drawing" width="400"/>
+<img src="/images/image-2.png" alt="drawing" width="400"/>
 
 What is possible to see in the images above is that the time spent to load the pickle file was the bottleneck of the pipeline, but we just pay the biggest time in the first call of the function. The next calls are faster because the container is already loaded and the pickle file is in memory.
 
