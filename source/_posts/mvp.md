@@ -10,7 +10,7 @@ The year of 2024 was one of the most important years of my career, I decided to 
 
 I build more than 5 products.
 
-Onde Hoje, SyncSpot, OpenLawBrasil, Matriculator & Bundler. All give to me the total of $0 buckets. 🫠
+Onde Hoje, SyncSpot, OpenLawBrasil, Matriculator & Bundler. All give to me the total of $0 bucks. 🫠
 
 But I learn some cool things about MPVs, between them:
 
@@ -38,4 +38,4 @@ This dependency thing is realted to painkillers and vitamins. Painkillers are pr
 
 ## 4. Mean Ticket and recurrence.
 
-Such a good topic, as a indie hacker, probably you don't want big problems, so, build a product with a pay once, use forever is a good idea. 
+Such a good topic, as a indie hacker, probably you don't want big problems, so, build a product with a pay once, use forever is a good idea.
