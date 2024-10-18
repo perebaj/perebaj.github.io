@@ -140,6 +140,10 @@ def load_all_models(self) -> dict:
 
 Accordingly the [documentation](https://superfastpython.com/threadpool-python/#Step_2_Submit_Tasks_to_the_Thread_Pool) the threadpool is perfect for I/O bound tasks, and the pickle file load is a I/O bound task. Besides that, using the Executor map functions, it's possible to load all models and lock the main thread until all models are loaded, avoiding deadlocks.
 
+## Wake up
+
+To not increase your cost and keep using the zero-scale approach and also maintaning the time to load the differents containers controlled, a good approach is to use a warm-up strategy. This strategy is basically call all the healthcheck endpoints of each service in your pipeline. This will make the following containers be warmed up before the first call, reducing the overall time spent in the pipeline.
+
 # References
 
 - [Enterprise Integration Patterns - Designing, Building, and Deploying Messaging Solutions][1]

@@ -61,19 +61,17 @@ The best companies are the Big Techs or startups that receive a huge amount of m
 
 Human beings always compare themselves with others, if you are normal, never did something different, your changes to stand out are really low. Try to create different things, side projects, open-source contributions, participate in hackathons, open talks, group studies, and so on. This will make you different, and you will be able to sell yourself better.
 
-# Salary range
+# Questions, questions, questions
 
-Just put your salary range to the moon if you are in a comfortable situation, otherwise you are dumb. I'm saying that, because I did this move, based on the "market talk", and looking a step back, I was stupid.
-
-## Questions about the product/company
+For me, change your work environment is a big headache, you need to feel comfortable and you should be able to pass some confidence to the interviewer, so, ask a lot of questions, about the company, the team, the product, the engineering team, and so on. Here are some questions that I like to ask:
 
 - How do you make money?
 - How do people know about the product and how do you attract them?
 - How do you deal with the competition?
-
-## Questions about the engineering team
-
 - How do you deal with new demands?
+- Did you recommend this company to a friend?
+- What is the worst thing about working here?
+- Which is the frequency of people leaving the company?
 
 # References
 
