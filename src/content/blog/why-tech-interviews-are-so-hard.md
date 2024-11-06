@@ -5,8 +5,6 @@ description: ''
 heroImage: '/blog-placeholder-2.jpg'
 ---
 
-# Why tech interviews are so hard?
-
 <div style="display: flex; justify-content: center;">
 <img src="/techinterviews.png" alt="prs" style="width:200px;"/>
 </div>
