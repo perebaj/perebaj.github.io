@@ -2,11 +2,11 @@
 title: 'The true learning is found in simplicity'
 description: ''
 pubDate: 'April 28, 2023'
-heroImage: '/public/blog-placeholder-2.jpg'
+heroImage: '/blog-placeholder-2.jpg'
 ---
 
 <div style="display: flex; justify-content: center;">
-    <img src="/public/true-knowledge.png" alt="prs" style="width:200px;"/>
+    <img src="/true-knowledge.png" alt="prs" style="width:200px;"/>
 </div>
 
 For a while now, I've been wondering about what I know of software development. Whether it's knowledge that can and will be relevant in a few years, or whether it will become obsolete or replaced by the likes of LLMs. The truth is, I know very little, and it bothers me quite a bit. But talking to some people and reading what engineers with decades of experience have to say, they too wonder about this.
