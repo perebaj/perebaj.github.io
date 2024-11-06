@@ -89,64 +89,15 @@ It's visual easy that this design will produce circular dependencies.
 
 ## Package organization
 
-The way that I like to organize it's pretty simple. I like to keep all the business domains in the root of the project, the subdirectories are for interact with these domains. For example, the inmem package is responsible for the in-memory implementation. If i'm trying to deal with users, then I create a user.go file in the root of the project, and the inmem/user.go file to deal with the in-memory implementation.
-
-```txt
-.
-├── cmd
-│   └── appname
-│       └── main.go
-├── inmem
-│   ├── user.go
-│   └── user_test.go
-├── user.go
-└── user_test.go
-```
-
-To use this implementation, I just need to create an interface of the inmem package in the place where I want to use it. In that way I decouple the implementation from the interface.
-
-Let's say that we are implementing the logic to create a user to serve an HTTP request. We can create a http/user.go file that will use the inmem/user.go file to create the user.
-
-```go
-package http
-
-type InmemUser interface {
-    CreateUser()
-}
-
-type UserHandler struct {
-    inmemUser InmemUser
-}
-
-func NewUserHandler(inmemUser InmemUser) *UserHandler {
-    return &UserHandler{inmemUser: inmemUser}
-}
-
-func (u *UserHandler) CreateUser() {
-    u.inmemUser.CreateUser()
-}
-```
-
-And the real implementation of the inmem/user can be called in the main.go file.
-
-```go
-
-package main
-
-import (
-    "github.com/username/project/inmem"
-    "github.com/username/project/http"
-)
-
-func main() {
-    inmemUser := inmen.New()
-    userHandler := http.NewUserHandler(inmemUser)
-}
-```
-
+This was the best definition of how to organize packages in the golang style without screwing up the codebase. It's a 2 definition rule that shape the whole codebase.
 
 ### Domain Types
-### Service Types
+
+Are types that model your business domain
+
+### Service
+
+Are the packages that operates on or with domain types
 
 ## Names and Conventions
 
