@@ -14,7 +14,9 @@
     "@astrojs/rss": "^4.0.9",
     "@astrojs/sitemap": "^3.2.1",
     "astro": "^4.16.9",
-    "playwright": "^1.48.2",
     "rehype-mermaid": "^3.0.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.2"
   }
 }
