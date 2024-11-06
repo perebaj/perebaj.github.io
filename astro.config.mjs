@@ -5,6 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'perebaj.github.io',
+	site: 'https://perebaj.github.io',
 	integrations: [mdx(), sitemap()],
 });
