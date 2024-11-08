@@ -48,9 +48,7 @@ Dude, you are talking with people, people like receptivity, be kind, and try to 
 
 # Don't judge a book by its cover
 
-This should be true, but isn't! People look for appearance, the way that you talk, the car that you drive, the brand of the clothes that you wear. It's terrible. I know! But as soon as you understand that, better!
-
-So, you need to have a good look!
+This should be true, but isn't! People look for appearance, the way that you talk, the university that you studied, the projects that you worked on. Keep it in mind and try to sell yourself better.
 
 # The Market
 
