@@ -11,30 +11,30 @@ heroImage: '/rocket3.png'
 
 # Topus - EESC USP
 
-Topus é um grupo de engenharia focado em engenharia aeroespacial. O grupo é composto por estudantes da Universidade de São Paulo, Brasil, focados no desenvolvimento de foguetes e outros componentes aeroespaciais.
+Topus is an engineering group focused on aerospace engineering. The group comprises students from the University of São Paulo, Brazil, dedicated to developing rockets and other aerospace components.
 
-O objetivo do grupo é participar de algumas competições e desenvolver uma cultura de engenharia entre os estudantes de diferentes cursos, como engenharia mecânica, engenharia elétrica, ciência da computação, engenharia aeroespacial e outros.
+The group’s objective is to participate in various competitions and foster a culture of engineering among students from different courses, such as mechanical engineering, electrical engineering, computer science, aerospace engineering, and others.
 
-# Definições
+# Definitions
 
-## Propulsão
+## Propulsion
 
-Em um sentido amplo é o ato de modificar o movimento de um copo. Os mecanismos de propulsão fornecem uma força que pode ser utilizada para vencer a gravidade, mudar a velocidade ou superar a resistência do meio ao movimento. A propulsão a jato baseia-se na ejeção de matéria de um sistema gerando uma força de reação sobre o sistema. A propulsão em foguetes é uma classe de propulsão a jato em que o empuxo é produzido pela ejeção exclusivamente de matéria armazenada a bordo. Chamada de propelente. Que nada mais é que um **oxidante** e um **combustível**.
+In a broad sense, propulsion refers to the act of changing the motion of a body. Propulsion mechanisms provide a force that can be used to overcome gravity, change velocity, or counteract the medium's resistance to movement. Jet propulsion is based on the ejection of matter from a system, generating a reactive force on the system. Rocket propulsion is a type of jet propulsion in which thrust is produced solely by ejecting matter stored onboard, known as propellant. This consists of an **oxidizer** and a **fuel**.
 
-Propulsão em foguetes se enquadram no ramo da química e possuem diferentes tipos que caracterizam o tipo de foguete. Dentre elas, temos a propulsão sólida, líquida e híbrida.
+Rocket propulsion falls under the branch of chemistry and has different types, characterizing different kinds of rockets. Among these are solid, liquid, and hybrid propulsion.
 
-A propulsão sólida é caracterizada por ter o oxidante e o combustível misturados em um único composto.
+Solid propulsion is characterized by the oxidizer and fuel being mixed in a single compound.
 
-A propulsão líquida é caracterizada por ter o oxidante e o combustível armazenados separadamente(líquidos) e misturados no momento da queima, aumentando a eficiência do motor.
+Liquid propulsion is characterized by the oxidizer and fuel being stored separately (liquid) and mixed at the time of combustion, increasing engine efficiency.
 
 
-## Propulsão híbrida
+## Hybrid Propulsion
 
-Nesse projeto, estamos projetando um foguete de **propulsão híbrida**. Nessa formação, o combustível e comburente(agente oxidante) se encontram em estados diferentes, o mais comúm é que o combustível seja sólido, preenchendo a câmara de combustão na qual o comburente líquido ou gasoso é injetado.
+In this project, we are designing a **hybrid propulsion rocket**. In this configuration, the fuel and oxidizing agent (oxidizer) are in different states; most commonly, the fuel is solid, filling the combustion chamber, where a liquid or gaseous oxidizer is injected.
 
-A queima, se dá através de um processo de difusão turbulenta macroscópica, de forma que a razão oxidante/combustível é controlada e varia ao longo do tempo na câmara de combustão.
+Combustion occurs through a process of macroscopic turbulent diffusion, meaning that the oxidizer/fuel ratio is controlled and varies over time in the combustion chamber.
 
-As imagens a seguir mostram a estrutura de um motor híbrido e a estrutura de um foguete híbrido.
+The following images show the structure of a hybrid motor and the structure of a hybrid rocket.
 
 <div style="display: flex; justify-content: center;">
     <img src="/hybrid-motor.png" alt="prs" style="width:600px;"/>
@@ -45,28 +45,52 @@ As imagens a seguir mostram a estrutura de um motor híbrido e a estrutura de um
     <img src="/structure-hibrid-rocket.png" alt="prs" style="width:600px;"/>
 </div>
 
-A técnologia de propulsão híbrida já é conhecida há mais de 50 anos. E ela se caracteriza por alguns pontos:
+Hybrid propulsion technology has been known for over 50 years. It is characterized by several points:
 
-**Segurança**: A propulsão híbrida é considerada mais segura que a propulsão sólida e líquida. Pois, a mistura do oxidante e do combustível é feita no momento da queima, sendo assim, a taxa de regressão com relação à pressão é independente, tornando sistemas híbridos mais seguros que os sistemas sólidos caso ocorra picos de pressão.
+**Safety**: Hybrid propulsion is considered safer than solid and liquid propulsion since the mixing of the oxidizer and fuel occurs during combustion. Therefore, the regression rate relative to pressure is independent, making hybrid systems safer than solid systems in case of pressure spikes.
 
-**Controle**: O controle da vazão de oxidante nos motores híbridos permite o controle acurado do nível de empuxo e a realização de manobras de controle e re-acionamentos dentro de uma única missão. Diferente dos sólidos, que funcionam em single burn.
+**Control**: Controlling the oxidizer flow rate in hybrid engines allows precise thrust level control and the ability to perform control maneuvers and re-ignitions within a single mission. This differs from solid propulsion, which operates in a single burn.
 
-## Escoamento vortical
+## Vortical Flow
 
-Em suma, o escoamento vortical é um tipo de escoamento que forma vórtices. Esse fenômeno é importante para a a construção do motor e queima adequada do propelente, pois o fenômeno é responsável por aumentar a taxa de regressão do combustível sólido, permitindo o uso de grãos mono-perfurados.
+In short, vortical flow is a type of flow that forms vortices. This phenomenon is essential for motor construction and proper propellant combustion, as it increases the regression rate of the solid fuel, allowing the use of single-perforated grains.
 
-O video a seguir mostra um exemplo de escoamento vortical de uma peça desenhada pelo grupo.
+The video below shows an example of vortical flow in a part designed by the group.
 
 <div style="display: flex; justify-content: center;">
     <img src="/vortex.gif" />
 </div>
 
-E a imagem a baixo mostra o resultado da queima do grão mono-perfurado quando a injeção do oxidante é feita de forma vortecial.
+And the image below shows the result of the single-perforated grain combustion when the oxidizer is injected in a vortical manner.
+
+<div style="display: flex; justify-content: center;">
+    <img src="/vortex-burn.gif" alt="prs" style="width:600px;"/>
+</div>
 
 <div style="display: flex; justify-content: center;">
     <img src="/escoamento-vortical.png" alt="prs" style="width:600px;"/>
 </div>
 
+
+## Purge Process/Purification
+
+The purge process is a crucial step in the rocket's preparation for launch. It consists of removing any remaining oxidizer from the combustion chamber and the fuel tank. This process is essential to prevent the combustion of the remaining oxidizer in the combustion chamber, which could cause an explosion.
+
+The purge process is performed by injecting a neutral gas into the combustion chamber and fuel tank. This gas is injected at a pressure higher than the oxidizer's pressure, ensuring that the oxidizer is expelled from the system.
+
+This can be made using a inert gas, like nitrogen (N2). This gas has low reactivity and is not flammable, making it ideal for purging the system.
+
+The objetive is to have sure that the system is clean and ready to be used again.
+
+## Nozzle
+
+The nozzle is a crucial part of the rocket engine. It is responsible for converting the thermal energy generated by the combustion of the propellant into kinetic energy, which propels the rocket. The nozzle's design is essential for the engine's performance, as it determines the exhaust gas's velocity and pressure.
+
+Here was designed a nozzle using Graphite, a material that can withstand high temperatures.
+
+<div style="display: flex; justify-content: center;">
+    <img src="/nozzle-graphit.png" alt="prs" style="width:400px;"/>
+</div>
 
 # The System (Big Picture)
 
@@ -79,4 +103,12 @@ E a imagem a baixo mostra o resultado da queima do grão mono-perfurado quando a
 </div>
 
 
-# Solenoid & pressure transducer system
+# Next steps
+
+I'm taking care of the **eletronic side of the project**. So, the system that will feed that solenoid valves and the pressure sensors. For now, I'm suffering a lot to create the circuit. In the next post I'll show you the circuit and the code that I'm using to control the valves and the sensors.
+
+# Learning and thoughts
+
+USP has being surprising me every day! 🧠 The engineer maturity of my colleagues is amazing. This just affirm the idea that good people on the right environment are able to build incredible things. I'm just working on the project for 3 months and I fell that I'm learning a lot.
+
+One thing that is COMPLETELY different from the software world is that in software we just deploy and go ahead. In environments where we are dealing with sensitive parameters, we need to be very careful and small changes can make a huge difference. I've been thinking that, for this reason, maybe we should have a more formal process in software development.
