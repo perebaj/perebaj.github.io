@@ -70,4 +70,13 @@ E a imagem a baixo mostra o resultado da queima do grão mono-perfurado quando a
 
 # The System (Big Picture)
 
+<div style="display: flex; justify-content: center;">
+    <img src="/design-hybrid-motor.png" alt="prs" style="width:700px;"/>
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/hybridmotor-system.gif" />
+</div>
+
+
 # Solenoid & pressure transducer system

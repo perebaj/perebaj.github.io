@@ -2,7 +2,7 @@
 title: Optmizing ML models using threads and reducing the tail at scale network
 pubDate: 2024-10-10 18:57:20
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/placeholder.png'
 ---
 
 <img src="/image-3.png" alt="blow" width="200" style="display: block; margin-left: auto; margin-right: auto; transform: rotate(90deg);"/>

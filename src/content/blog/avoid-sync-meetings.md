@@ -2,10 +2,8 @@
 title: avoid sync meetings
 pubDate: 2024-08-30 08:18:57
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/placeholder1.png'
 ---
-
-# Avoid Sync
 
 <div style="display: flex; justify-content: center;">
     <img src="/async.png" alt="drawing" style="width:200px;"/>
