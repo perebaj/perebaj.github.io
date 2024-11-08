@@ -2,7 +2,7 @@
 title: why tech interviews are so hard?
 pubDate: 2024-03-30 18:42:11
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/iwantajob.png'
 ---
 
 <div style="display: flex; justify-content: center;">

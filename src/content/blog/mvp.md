@@ -2,7 +2,7 @@
 title: mvp
 pubDate: 2024-08-11 16:26:41
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/mvp.png'
 ---
 
 Recently I take part in a study group about startups covered by USP. Called "Zero to One", probably the title was stolen from Peter Thiel's book. In one of the meetings, we had the pleasure to talk with a guy that found 19 startups. He said some cool things, those things stay hitting my head. So I decided to write about it.

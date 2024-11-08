@@ -2,7 +2,7 @@
 title: 'The true learning is found in simplicity'
 description: ''
 pubDate: 'April 28, 2023'
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/simplicity.png'
 ---
 
 <div style="display: flex; justify-content: center;">

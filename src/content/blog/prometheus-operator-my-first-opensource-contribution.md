@@ -2,7 +2,7 @@
 title: prometheus-operator my first opensource contribution
 pubDate: 2024-08-30 08:05:01
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/operator.png'
 ---
 
 

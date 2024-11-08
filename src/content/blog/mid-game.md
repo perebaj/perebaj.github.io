@@ -2,7 +2,7 @@
 title: mid game
 pubDate: 2023-10-18 18:25:45
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/midgame.png'
 ---
 
 In a chess game, as soon as possible you develop your pieces to achieve the mid-game, better is for your match! At this stage of the game, the number of unknown plays starts to increase exponentially, At this exact point the players who built a good foundation, in the beginning(early-game), start to contrast, without saying that it is in this phase that it's possible to differentiate players with the [good taste](http://www.paulgraham.com/taste.html)

@@ -2,7 +2,7 @@
 title: just make it
 pubDate: 2023-10-18 09:47:01
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/getitdone.png'
 ---
 
 <div style="display: flex; justify-content: center;">
