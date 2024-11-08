@@ -15,8 +15,5 @@
     "@astrojs/sitemap": "^3.2.1",
     "astro": "^4.16.9",
     "rehype-mermaid": "^3.0.0"
-  },
-  "devDependencies": {
-    "playwright": "^1.48.2"
   }
 }
