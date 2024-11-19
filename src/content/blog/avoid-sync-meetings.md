@@ -12,7 +12,7 @@ heroImage: '/placeholder1.png'
 
 The best way to organize your thoughts is to take some time to think, write, and make some reflections on it. This process, at least for me, has been increasing my understanding of some deep topics. This forces you to organize your ideas.
 
-Bring this to the tech world. I'm sure, if you are a developer, you've already faced some boring daily meetings, retros, and plannings...
+Bringing this to the tech world. I'm sure, if you are a developer, you've already faced some boring daily meetings, retros, and plannings...
 
 The root cause for me is that before the meeting, nobody is taking time to think. And putting 7 engineers in the same room to do that at the same time, doesn't seem a good idea!
 

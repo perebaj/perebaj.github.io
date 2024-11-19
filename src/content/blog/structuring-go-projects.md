@@ -1,5 +1,5 @@
 ---
-title: structuring golang projects
+title: structuring golang projects (uncompleted)
 pubDate: 2024-08-31 18:38:30
 description: ''
 heroImage: '/structure.png'
@@ -30,6 +30,8 @@ Who never ask yourself about what is the best way to create a new project? Shoul
 
 ## Grouping
 
+Listing some feasible approaches to organize your golang codebase.
+
 ### Flat
 
 ```txt
@@ -47,9 +49,6 @@ Who never ask yourself about what is the best way to create a new project? Shoul
 ```
 
 At least for me, in a first glance, seems a good approach. Everything is together, easy to find, easy to change. But, obviously, when the projects grow, this approach will become a mess.
-
-It's visual easy that this design will produce circular dependencies.
-
 
 ### By Function/Layer
 ### By Context
@@ -93,16 +92,14 @@ This was the best definition of how to organize packages in the golang style wit
 
 ### Domain Types
 
-Are types that model your business domain
-
+The domain types are the ones that represent the business logic of the application.
 ### Service
 
-Are the packages that operates on or with domain types
+The service packages are the ones that will operate on the domain types.
 
 ## Names and Conventions
 
 ## Mock
-
 
 # Important Resources
 

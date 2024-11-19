@@ -5,24 +5,26 @@ description: ''
 heroImage: '/midgame.png'
 ---
 
-In a chess game, as soon as possible you develop your pieces to achieve the mid-game, better is for your match! At this stage of the game, the number of unknown plays starts to increase exponentially, At this exact point the players who built a good foundation, in the beginning(early-game), start to contrast, without saying that it is in this phase that it's possible to differentiate players with the [good taste](http://www.paulgraham.com/taste.html)
+In a chess game, as soon as possible you develop your pieces to achieve the mid-game, better is for your match! At this stage of the game, the number of unknown plays starts to increase exponentially, At this exact point the players who built a good foundation, in the beginning(early-game), start to contrast, without saying that it is in this phase that it's possible to differentiate players with the [good taste](http://www.paulgraham.com/taste.html).
+
+Paul graham mentioned that one thing that outstand his first company was use Lisp, this because we was able to ship code faster than the others. Reference: [Beating the Averages](http://www.paulgraham.com/avg.html). The ideia here is not "use Lisp, this is the best language in the world", but the fact that exist bad and good engineers, those will choose best or bad tools to solve the problems.
 
 ## Assumptions
 
 <img src="/midgame1.png" alt="prs" style="width:100px;"/>
 
 
-> Software is hard to change because it's complicated and permeated with > assumptions, principally when you have integrations and versioning.
+> Software is hard to change because it's complicated and permeated with assumptions, principally when you have integrations and versioning.
 >
 > [Martin Nally - Designing Quality APIs (Cloud Next '18)
 > ](https://www.youtube.com/watch?v=P0a7PwRNLVU)
 
 
-I really think that software development could be compared with a chess game, in truth, I'm always asking myself, which are the core plays, that I as an engineer could follow to guarantee that the mid-game of my projects will be successful. Because the only certainty that I have is that in this phase I will have more premises than concrete and determinist certain
+I really think that software development could be compared with a chess game, in truth, I'm always asking myself, which are the core plays, that I as an engineer could follow to guarantee that the mid-game of my projects will be successful. Because the only certainty that I have is that in this phase I will have more premises than concrete and determinist certain.
 
-What I want to tease here, are the lacks in languages that are widely used to build distributed system. I'm not a mage 🧙🏾‍♂️ of the software development, but for me, it's possible to perceive these lacks and also weave options on top of it!
+What I want to tease here, are the lacks of knowledge when you are building a software-driven solution, and how the tools that you choose can leverage or not your project to the next level.
 
-## Side effect
+<!-- ## Side effect
 
 <img src="/midgame0.png" alt="prs" style="width:100px;"/>
 
@@ -30,7 +32,7 @@ This is completely odd to me, depending on the order in which you call your func
 
 But yep, you can say: "you can't blame a language for a developer's failure!" And I think that you're probably right.
 
-But at least for me, I think that I will always commit a foolish error and if the language has the mechanisms to avoid this, better, let's avoid future problems
+But at least for me, I think that I will always commit a foolish error and if the language has the mechanisms to avoid this, better, let's avoid future problems -->
 
 
 ## Other era, other principles
@@ -44,6 +46,7 @@ But at least for me, I think that I will always commit a foolish error and if th
 
 When you have a limited time to embrace new problems and product challenges, I really think that you need to be very strict in the tools that you are using, because this will reflect in the way that new guys will build on top of your code base and obviously the way that you need to circumvent the architecture design to make these languages that weren't built to run in distributed environment had a good performance.
 
+Be aware that EVERY type of software nowadays should run in a distributed env, is not a question of if, but when.
 
 ## Threads and locks
 

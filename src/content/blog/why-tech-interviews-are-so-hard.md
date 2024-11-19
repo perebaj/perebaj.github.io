@@ -72,6 +72,10 @@ For me, change your work environment is a big headache, you need to feel comfort
 - What is the worst thing about working here?
 - Which is the frequency of people leaving the company?
 
+# Conclusion
+
+This is a brief list of things that I capture in my journey, and I hope that it could help someone else. Let's get it!
+
 # References
 
 - [Interviewing engineers](https://xdg.me/interviewing-engineers/)
