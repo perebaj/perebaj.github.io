@@ -11,9 +11,9 @@ The year of 2024 was one of the most important years of my career, I decided to 
 
 I build more than 5 products.
 
-Onde Hoje, SyncSpot, OpenLawBrasil, Matriculator & Bundler. All give to me the total of $0 buckets. 🫠
+Onde Hoje, SyncSpot, OpenLawBrasil, Matriculator & Bundler. Some of them give to me some money, but not what I was expecting.
 
-But I learn some cool things about MPVs, between them:
+In this process,I learn some cool things about MPVs, between them:
 
 5 Questions to Ask Before your MVP
 
