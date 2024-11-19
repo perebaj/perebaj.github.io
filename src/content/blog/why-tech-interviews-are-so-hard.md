@@ -72,6 +72,69 @@ For me, change your work environment is a big headache, you need to feel comfort
 - What is the worst thing about working here?
 - Which is the frequency of people leaving the company?
 
+1. "How do you decide what to build?"
+
+This question reveals a lot about the company culture:
+Top-down decisions vs. collaborative ones
+Whether engineers are heard
+If there's a product discovery process
+
+🚩 Red flag: "The CEO decides everything."
+
+2. "What was the last project that failed, and what did you learn from it?"
+
+The answer shows:
+How the company deals with failures
+Whether there's a learning culture
+Leadership transparency
+
+🚩 Red flag: "All our projects are a success."
+
+3. "How do you measure the success of an engineer here?"
+
+Look to understand:
+Promotion criteria
+Whether it's just about deliverables or also about impact
+If there's a clear career plan
+
+🚩 Red flag: Vague criteria or focus only on time spent in the company.
+
+4. "What’s the biggest technical challenge you have today?"
+
+This is important to:
+Assess technical maturity
+Understand real problems
+See if there’s alignment with your skills
+
+🚩 Red flag: Not being able to identify clear challenges.
+
+5. "How do you help your team members grow?"
+
+Look for:
+Concrete examples of growth
+Structured mentoring
+Budget for education
+
+🚩 Red flag: "People grow naturally."
+
+6. "What’s the current runway of the company?"
+
+Essential for startups:
+How long until they need to raise more funds
+Whether they have a path to becoming profitable (cash flow positive/default alive)
+Realistic growth plans
+
+🚩 Red flag: Not knowing or avoiding the question.
+
+7. "How do you ensure the team maintains a good work-life balance?"
+
+Observe:
+On-call policies
+Schedule expectations
+How they handle deadlines
+
+🚩 Red flag: "Everyone here is a workaholic and loves it."
+
 # Conclusion
 
 This is a brief list of things that I capture in my journey, and I hope that it could help someone else. Let's get it!
